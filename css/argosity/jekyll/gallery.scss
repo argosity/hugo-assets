@@ -1,0 +1,19 @@
+@import "../../vendor/photoswipe";
+@import "../../vendor/photoswipe-skin";
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    > a {
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+}
