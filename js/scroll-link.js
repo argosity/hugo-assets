@@ -34,7 +34,8 @@
         this.link = document.querySelector(this.link);
       }
       if (this.link && this.destination) {
-        this.link.addEventListener('click', () => {
+          this.link.addEventListener('click', (ev) => {
+          ev.preventDefault()
           return this.scrollToElement();
         });
       } else {
